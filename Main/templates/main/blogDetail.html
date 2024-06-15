@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Detail</title>
+    <style>
+        .container{
+            background-color: rgb(239, 250, 246);
+            /* border: 2px rgb(255, 255, 255) solid; */
+            width: 800px;
+            margin: auto;
+            margin-top: 50px;
+            padding: 30px 10px 50px 20px;
+            border-radius: 15px;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;;
+        }
+        .second_div{
+            margin-top: 30px;
+            margin-left: 50px;
+        }
+        button{
+            font-size: large;
+            color: rgb(255, 255, 255);
+            display: flex;
+            align-items: center;
+            margin: auto;
+            /* justify-content: center; */
+            margin-bottom: -20px;
+            margin-top: 4%;            
+            padding: 20px;
+            background-color: rgb(5, 16, 77);
+            border: none;
+            border-radius: 8px;
+            box-shadow: rgba(0, 0, 0.5, 0.5) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1><u>Welcome at the Detailed Blog on 'How to {{data.name}}?'</u></h1>
+        <br>
+        <h3>Course Name : {{data.name}} <br>
+        Name of the Author : {{data.author}} <br>
+        Course Description : {{data.desc}} <br>
+        Course Duration : Six Months <br><br>
+        <a href="https://www.masaischool.com/contact" target="_blank"><button><b>Contact Us</b></button></a>
+    </h3>
+    </div>
+    <div class="second_div">
+        <ul>
+            <li><h3><a href="/blogs">Return to Blogs</a></h3></li>
+            <li><h3><a href="/Main/main">Return to main app</a></h3></li>
+            <li><h3><a href="/Main">Return to Homepage</a></h3></li>
+        </ul>
+    </div>
+    
+</body>
+</html>
